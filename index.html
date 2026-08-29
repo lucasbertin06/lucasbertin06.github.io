@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Lucas Bertin</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 { text-align: center; margin-bottom: 2.5rem; }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .project-card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border: 1px solid #334155;
+    }
+    .tag {
+      align-self: flex-start;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      background-color: #3b82f6;
+    }
+    .tag.java { background-color: #eab308; color: #000; }
+    .project-card h2 {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+    .project-card p {
+      color: #94a3b8;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .btn-container {
+      display: flex;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 0.75rem;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #1d4ed8; }
+    .btn.secondary { background: #334155; }
+    .btn.secondary:hover { background: #475569; }
+  </style>
+</head>
+<body>
+
+  <h1>Mon Portfolio de Projets</h1>
+
+  <div class="projects-grid">
+    
+    <!-- Projet Python -->
+    <article class="project-card">
+      <span class="tag">Python</span>
+      <h2>Relation Client-Serveur Mémoire</h2>
+      <p>Architecture réseau et système en Python gérant la communication et la gestion de mémoire partagée entre un client et un serveur.</p>
+
+      <div class="btn-container">
+        <a href="https://github.com/lucasbertin06/Creation-relation-client-serveur-memoire" target="_blank" class="btn">Accéder au Repo GitHub</a>
+      </div>
+    </article>
+
+    <!-- Projet Java 2D -->
+    <article class="project-card">
+      <span class="tag java">Java 2D</span>
+      <h2>POO 2D Java Game</h2>
+      <p>Jeu 2D orienté objet développé en Java à l'aide des bibliothèques LibGDX et LWJGL3.</p>
+
+      <div class="btn-container">
+        <a href="https://github.com/lucasbertin06/poo-2d-java-game" target="_blank" class="btn">Accéder au Repo GitHub</a>
+        <a href="game.jar" download class="btn secondary">Télécharger (.JAR)</a>
+      </div>
+    </article>
+
+  </div>
+
+</body>
+</html>
